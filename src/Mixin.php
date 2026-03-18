@@ -1205,7 +1205,6 @@ trait Mixin
     /**
      * @template T of object
      * @psalm-param class-string<T> $class
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1219,7 +1218,6 @@ trait Mixin
     /**
      * @template T of object
      * @psalm-param class-string<T> $class
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1379,7 +1377,6 @@ trait Mixin
      *
      * @param T|null $value
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1397,7 +1394,6 @@ trait Mixin
      *
      * @param iterable<T> $value
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1443,7 +1439,6 @@ trait Mixin
      *
      * @psalm-param array<class-string> $classes
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1462,7 +1457,6 @@ trait Mixin
      *
      * @psalm-param array<class-string> $classes
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1485,7 +1479,6 @@ trait Mixin
      *
      * @psalm-param array<class-string> $classes
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1559,7 +1552,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1573,7 +1565,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1631,7 +1622,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1761,7 +1751,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1775,7 +1764,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1814,7 +1802,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param string|null $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1829,7 +1816,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param iterable<string> $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1848,7 +1834,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param iterable<string|null> $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1867,7 +1852,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param string|null $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1882,7 +1866,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param iterable<string> $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1901,7 +1884,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param iterable<string|null> $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1920,7 +1902,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param string|null $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1935,7 +1916,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param iterable<string> $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1954,7 +1934,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param iterable<string|null> $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1973,7 +1952,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param string|null $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -1988,7 +1966,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param iterable<string> $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2007,7 +1984,6 @@ trait Mixin
      * @psalm-pure
      *
      * @psalm-param iterable<string|null> $value
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2023,8 +1999,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrUniqueValues(mixed $values, string $message = ''): mixed
@@ -2035,8 +2009,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allUniqueValues(mixed $values, string $message = ''): mixed
@@ -2051,8 +2023,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrUniqueValues(mixed $values, string $message = ''): mixed
@@ -2067,8 +2037,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrEq(mixed $value, mixed $expect, string $message = ''): mixed
@@ -2079,8 +2047,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allEq(mixed $value, mixed $expect, string $message = ''): iterable
@@ -2095,8 +2061,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrEq(mixed $value, mixed $expect, string $message = ''): iterable
@@ -2111,8 +2075,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrNotEq(mixed $value, mixed $expect, string $message = ''): mixed
@@ -2123,8 +2085,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNotEq(mixed $value, mixed $expect, string $message = ''): iterable
@@ -2139,8 +2099,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrNotEq(mixed $value, mixed $expect, string $message = ''): iterable
@@ -2157,7 +2115,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2171,7 +2128,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2189,7 +2145,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2207,7 +2162,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2221,7 +2175,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2239,7 +2192,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2257,7 +2209,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2271,7 +2222,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2289,7 +2239,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2307,7 +2256,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2321,7 +2269,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2339,7 +2286,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2357,7 +2303,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2371,7 +2316,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2389,7 +2333,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2407,7 +2350,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2421,7 +2363,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2439,7 +2380,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2457,7 +2397,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2471,7 +2410,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2489,7 +2427,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2507,7 +2444,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2521,7 +2457,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2539,7 +2474,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2557,7 +2491,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2571,7 +2504,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2589,7 +2521,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2607,7 +2538,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2621,7 +2551,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2639,7 +2568,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2657,7 +2585,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2671,7 +2598,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2689,7 +2615,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2707,7 +2632,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2721,7 +2645,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2739,7 +2662,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2757,7 +2679,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2771,7 +2692,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2789,7 +2709,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2807,7 +2726,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2821,7 +2739,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2839,7 +2756,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2857,7 +2773,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2871,7 +2786,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2889,7 +2803,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2907,7 +2820,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2921,7 +2833,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2939,7 +2850,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2957,7 +2867,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2971,7 +2880,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -2989,7 +2897,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3007,7 +2914,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3021,7 +2927,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3039,7 +2944,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3057,7 +2961,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3071,7 +2974,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3089,7 +2991,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3107,7 +3008,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3121,7 +3021,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3139,7 +3038,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3157,7 +3055,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3171,7 +3068,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3189,7 +3085,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3207,7 +3102,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3221,7 +3115,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3239,7 +3132,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3257,7 +3149,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3271,7 +3162,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3289,7 +3179,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3307,7 +3196,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3321,7 +3209,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3339,7 +3226,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3357,7 +3243,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3371,7 +3256,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3389,7 +3273,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3463,7 +3346,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3477,7 +3359,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3515,7 +3396,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3529,7 +3409,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3547,7 +3426,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3565,7 +3443,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3579,7 +3456,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3597,7 +3473,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3615,7 +3490,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3629,7 +3503,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3647,7 +3520,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3665,7 +3537,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3679,7 +3550,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3697,7 +3567,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -3713,8 +3582,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrFileExists(mixed $value, string $message = ''): mixed
@@ -3725,8 +3592,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allFileExists(mixed $value, string $message = ''): iterable
@@ -3741,8 +3606,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrFileExists(mixed $value, string $message = ''): iterable
@@ -3757,8 +3620,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrFile(mixed $value, string $message = ''): mixed
@@ -3769,8 +3630,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allFile(mixed $value, string $message = ''): iterable
@@ -3785,8 +3644,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrFile(mixed $value, string $message = ''): iterable
@@ -3801,8 +3658,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrDirectory(mixed $value, string $message = ''): mixed
@@ -3813,8 +3668,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allDirectory(mixed $value, string $message = ''): iterable
@@ -3829,8 +3682,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrDirectory(mixed $value, string $message = ''): iterable
@@ -3845,8 +3696,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrReadable(mixed $value, string $message = ''): mixed
@@ -3857,8 +3706,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allReadable(mixed $value, string $message = ''): iterable
@@ -3873,8 +3720,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrReadable(mixed $value, string $message = ''): iterable
@@ -3889,8 +3734,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrWritable(mixed $value, string $message = ''): mixed
@@ -3901,8 +3744,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allWritable(mixed $value, string $message = ''): iterable
@@ -3917,8 +3758,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrWritable(mixed $value, string $message = ''): iterable
@@ -4170,7 +4009,6 @@ trait Mixin
      *
      * @param string|object|null $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4186,7 +4024,6 @@ trait Mixin
      *
      * @param iterable<string|object> $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4206,7 +4043,6 @@ trait Mixin
      *
      * @param iterable<string|object|null> $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4228,7 +4064,6 @@ trait Mixin
      *
      * @psalm-param class-string|object|null $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4246,7 +4081,6 @@ trait Mixin
      *
      * @psalm-param iterable<class-string|object> $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4268,7 +4102,6 @@ trait Mixin
      *
      * @psalm-param iterable<class-string|object|null> $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4290,7 +4123,6 @@ trait Mixin
      *
      * @psalm-param class-string|object|null $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4308,7 +4140,6 @@ trait Mixin
      *
      * @psalm-param iterable<class-string|object> $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4330,7 +4161,6 @@ trait Mixin
      *
      * @psalm-param iterable<class-string|object|null> $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4352,7 +4182,6 @@ trait Mixin
      *
      * @psalm-param class-string|object|null $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4370,7 +4199,6 @@ trait Mixin
      *
      * @psalm-param iterable<class-string|object> $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4392,7 +4220,6 @@ trait Mixin
      *
      * @psalm-param iterable<class-string|object|null> $classOrObject
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4410,9 +4237,7 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @param string|int $key
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4426,9 +4251,7 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @param string|int $key
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4446,9 +4269,7 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @param string|int $key
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4466,9 +4287,7 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @param string|int $key
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4482,9 +4301,7 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @param string|int $key
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4502,9 +4319,7 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @param string|int $key
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -4576,8 +4391,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrCount(mixed $array, mixed $number, string $message = ''): mixed
@@ -4588,8 +4401,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allCount(mixed $array, mixed $number, string $message = ''): mixed
@@ -4604,8 +4415,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrCount(mixed $array, mixed $number, string $message = ''): mixed
@@ -4620,8 +4429,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrMinCount(mixed $array, mixed $min, string $message = ''): mixed
@@ -4632,8 +4439,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allMinCount(mixed $array, mixed $min, string $message = ''): mixed
@@ -4648,8 +4453,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrMinCount(mixed $array, mixed $min, string $message = ''): mixed
@@ -4664,8 +4467,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrMaxCount(mixed $array, mixed $max, string $message = ''): mixed
@@ -4676,8 +4477,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allMaxCount(mixed $array, mixed $max, string $message = ''): mixed
@@ -4692,8 +4491,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrMaxCount(mixed $array, mixed $max, string $message = ''): mixed
@@ -4708,8 +4505,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function nullOrCountBetween(mixed $array, mixed $min, mixed $max, string $message = ''): mixed
@@ -4720,8 +4515,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allCountBetween(mixed $array, mixed $min, mixed $max, string $message = ''): mixed
@@ -4736,8 +4529,6 @@ trait Mixin
     }
 
     /**
-     * @return mixed
-     *
      * @throws InvalidArgumentException
      */
     public static function allNullOrCountBetween(mixed $array, mixed $min, mixed $max, string $message = ''): mixed
@@ -5047,7 +4838,6 @@ trait Mixin
      *
      * @param array<string, T>|null $array
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -5065,7 +4855,6 @@ trait Mixin
      *
      * @param iterable<array<string, T>> $array
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -5107,7 +4896,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -5121,7 +4909,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -5139,7 +4926,6 @@ trait Mixin
     /**
      * @psalm-pure
      *
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -5156,7 +4942,6 @@ trait Mixin
 
     /**
      * @psalm-param class-string<Throwable> $class
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -5169,7 +4954,6 @@ trait Mixin
 
     /**
      * @psalm-param class-string<Throwable> $class
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */
@@ -5186,7 +4970,6 @@ trait Mixin
 
     /**
      * @psalm-param class-string<Throwable> $class
-     * @return mixed
      *
      * @throws InvalidArgumentException
      */

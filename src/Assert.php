@@ -1841,7 +1841,6 @@ class Assert
     /**
      * @psalm-pure
      *
-     * @param string|int $key
      *
      * @throws InvalidArgumentException
      */
@@ -1862,7 +1861,6 @@ class Assert
     /**
      * @psalm-pure
      *
-     * @param string|int $key
      *
      * @throws InvalidArgumentException
      */
@@ -2163,7 +2161,7 @@ class Assert
         try {
             $expression();
         } catch (Throwable $e) {
-            $actual = \get_class($e);
+            $actual = $e::class;
             if ($e instanceof $class) {
                 return $expression;
             }
@@ -2217,18 +2215,18 @@ class Assert
 
         if (\is_object($value)) {
             if (\method_exists($value, '__toString')) {
-                return \get_class($value).': '.self::valueToString($value->__toString());
+                return $value::class.': '.self::valueToString($value->__toString());
             }
 
             if ($value instanceof DateTime || $value instanceof DateTimeImmutable) {
-                return \get_class($value).': '.self::valueToString($value->format('c'));
+                return $value::class.': '.self::valueToString($value->format('c'));
             }
 
-            if (\enum_exists(\get_class($value))) {
-                return \get_class($value).'::'.$value->name;
+            if (\enum_exists($value::class)) {
+                return $value::class.'::'.$value->name;
             }
 
-            return \get_class($value);
+            return $value::class;
         }
 
         if (\is_resource($value)) {
@@ -2247,7 +2245,7 @@ class Assert
      */
     protected static function typeToString(mixed $value): string
     {
-        return \is_object($value) ? \get_class($value) : \gettype($value);
+        return get_debug_type($value);
     }
 
     protected static function strlen(string $value): int
