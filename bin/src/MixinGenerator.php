@@ -446,7 +446,7 @@ BODY;
         $staticFunction = $this->phpdoc($phpdocLines, $indent)."\n";
         $staticFunction .= $indentation.'public static function '.$name.$this->functionParameters($parameters, $types, $defaults).": {$returnType}\n"
             .$indentation."{\n";
-        $staticFunction .= $methodBody."\n".$indentation."}";
+        $staticFunction .= $methodBody."\n".$indentation.'}';
 
         return $staticFunction;
     }

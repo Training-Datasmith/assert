@@ -140,23 +140,24 @@ class AssertTest extends TestCase
             ['resource', [self::getResource(), 'stream'], true],
             ['resource', [self::getResource(), 'other'], false],
             ['resource', [1], false],
-            ['isInitialized', [new class {
+            ['isInitialized', [new class () {
                 public mixed $a = null;
             }, 'a'], true],
-            ['isInitialized', [new class {
+            ['isInitialized', [new class () {
                 public mixed $a;
             }, 'a'], false],
-            ['isInitialized', [new class {
+            ['isInitialized', [new class () {
                 public mixed $a;
                 public mixed $b = true;
             }, 'a'], false],
-            ['isInitialized', [new class {
+            ['isInitialized', [new class () {
                 public mixed $a;
                 public mixed $b = true;
             }, 'b'], true],
             ['isCallable', ['strlen'], true],
             ['isCallable', [[self::class, 'getTests']], true],
-            ['isCallable', [function () {}], true],
+            ['isCallable', [function () {
+            }], true],
             ['isCallable', [1234], false],
             ['isCallable', ['foobar'], false],
             ['isArray', [[]], true],
@@ -573,12 +574,24 @@ class AssertTest extends TestCase
             ['uuid', ['ff6f8cb0-c57da-51e1-9b21-0800200c9a66'], false],
             ['uuid', ['af6f8cb-c57d-11e1-9b21-0800200c9a66'], false],
             ['uuid', ['3f6f8cb0-c57d-11e1-9b21-0800200c9a6'], false],
-            ['throws', [function () { throw new LogicException('test'); }, 'LogicException'], true],
-            ['throws', [function () { throw new LogicException('test'); }, 'IllogicException'], false],
-            ['throws', [function () { throw new Exception('test'); }], true],
-            ['throws', [function () { trigger_error('test'); }, 'Throwable'], false, false],
-            ['throws', [function () { trigger_error('test'); }, 'Unthrowable'], false, false],
-            ['throws', [function () { throw new Error(); }, 'Throwable'], true, true],
+            ['throws', [function () {
+                throw new LogicException('test');
+            }, 'LogicException'], true],
+            ['throws', [function () {
+                throw new LogicException('test');
+            }, 'IllogicException'], false],
+            ['throws', [function () {
+                throw new Exception('test');
+            }], true],
+            ['throws', [function () {
+                trigger_error('test');
+            }, 'Throwable'], false, false],
+            ['throws', [function () {
+                trigger_error('test');
+            }, 'Unthrowable'], false, false],
+            ['throws', [function () {
+                throw new Error();
+            }, 'Throwable'], true, true],
             ['ip', ['192.168.0.1'], true],
             ['ip', ['255.255.255.255'], true],
             ['ip', ['0.0.0.0'], true],
@@ -623,10 +636,14 @@ class AssertTest extends TestCase
             ['uniqueValues', [['qwerty', 'qwerty']], false],
             ['uniqueValues', [['asdfg', 'qwerty']], true],
             ['uniqueValues', [[123, '123']], false],
-            ['isStatic', [static function () {}], true],
-            ['isStatic', [function () {}], false],
-            ['notStatic', [static function () {}], false],
-            ['notStatic', [function () {}], true],
+            ['isStatic', [static function () {
+            }], true],
+            ['isStatic', [function () {
+            }], false],
+            ['notStatic', [static function () {
+            }], false],
+            ['notStatic', [function () {
+            }], true],
         ];
     }
 
